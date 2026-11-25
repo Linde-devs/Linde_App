@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Polígono (Josep). Textos iguales a la web cuando existen. -->
+    <string name="poligono_titulo">Polígono del predio</string>
+    <string name="poligono_cargando">Cargando el polígono…</string>
+    <string name="poligono_sin_predio">No se indicó el predio.</string>
+    <string name="poligono_sin_conexion">No hay conexión con el servidor. Revisa tu Internet e intenta de nuevo.</string>
+    <string name="poligono_vacio">Este predio todavía no tiene polígono ni punto registrado. Toca el mapa o camina el lindero con el GPS para marcarlo.</string>
+    <string name="poligono_version_titulo">Versión %1$d</string>
+    <string name="poligono_es_punto">Punto</string>
+    <string name="poligono_resumen">Versión %1$d · %2$s · %3$s</string>
+    <string name="poligono_resumen_motivo">Motivo: %1$s</string>
+    <string name="poligono_resumen_gps">%1$d vértices con GPS</string>
+    <string name="poligono_reintentar">Reintentar</string>
+    <string name="poligono_aviso_estado">El predio está «%1$s». Si cambias el polígono, vuelve a «Registrado» y tendrás que enviarlo de nuevo a revisión.</string>
+
+    <string name="poligono_instrucciones">Toca el mapa o usa «Agregar punto» en cada esquina del predio.</string>
+    <string name="poligono_puntos_marcados">Puntos marcados: %1$d (%2$d con GPS)</string>
+    <string name="poligono_punto_titulo">Punto %1$d · %2$s</string>
+    <string name="poligono_manual">Manual</string>
+    <string name="poligono_agregar_punto">Agregar punto</string>
+    <string name="poligono_guardar">Guardar</string>
+    <string name="poligono_deshacer">Deshacer último punto</string>
+    <string name="poligono_borrar_todo">Borrar todo</string>
+    <string name="poligono_importar">Importar archivo</string>
+    <string name="poligono_historial">Historial</string>
+    <string name="poligono_editar_actual">Corregir el polígono actual</string>
+    <string name="poligono_editando_actual">Se copiaron los vértices actuales. Agrega, quita o vuelve a marcar puntos y guarda.</string>
+
+    <string name="poligono_borrar_titulo">¿Borrar todos los puntos?</string>
+    <string name="poligono_borrar_mensaje">Se quitarán los %1$d puntos que marcaste y que todavía no guardaste.</string>
+    <string name="poligono_borrar_si">Borrar</string>
+    <string name="poligono_cancelar">Cancelar</string>
+    <string name="poligono_continuar">Continuar</string>
+    <string name="poligono_entendido">Entendido</string>
+
+    <string name="poligono_sin_puntos">Agrega puntos tocando el mapa o con el GPS.</string>
+    <string name="poligono_punto_no_permitido">Un solo punto solo se permite para predios de 4 ha o menos. Marca al menos 3 esquinas.</string>
+    <string name="poligono_minimo_tres">El polígono necesita al menos 3 puntos distintos.</string>
+    <string name="poligono_motivo_titulo">Motivo del cambio</string>
+    <string name="poligono_motivo_gps">Captura con GPS en el predio</string>
+    <string name="poligono_motivo_mapa">Dibujado en el mapa</string>
+    <string name="poligono_motivo_importado">Importado desde archivo</string>
+    <string name="poligono_guardado">Polígono guardado (versión %1$d).</string>
+    <string name="poligono_guardado_punto">Punto guardado (versión %1$d).</string>
+    <string name="poligono_importado">Polígono importado (versión %1$d).</string>
+    <string name="poligono_no_guardado">No se pudo guardar</string>
+    <string name="poligono_volvio_registrado">El predio volvió a «Registrado»: envíalo de nuevo a revisión.</string>
+
+    <string name="poligono_descartar_titulo">¿Descartar los puntos?</string>
+    <string name="poligono_descartar_mensaje">Tienes %1$d puntos sin guardar. Si sales, se pierden.</string>
+    <string name="poligono_descartar_si">Descartar</string>
+    <string name="poligono_seguir">Seguir editando</string>
+
+    <string name="poligono_sin_permiso">Sin permiso de ubicación solo puedes dibujar tocando el mapa. Para caminar el lindero con el GPS, permite la ubicación.</string>
+    <string name="poligono_permitir">Permitir</string>
+    <string name="poligono_gps_apagado">La ubicación del celular está apagada. Actívala para marcar puntos con el GPS.</string>
+    <string name="poligono_activar_ubicacion">Activar</string>
+    <string name="poligono_buscando_senal">Buscando señal GPS…</string>
+    <string name="poligono_buscando_gps">Buscando…</string>
+    <string name="poligono_precision">Precisión: %1$s</string>
+    <string name="poligono_precision_espera">Espera unos segundos antes de marcar</string>
+    <string name="poligono_precision_desconocida">Precisión: desconocida</string>
+    <string name="poligono_gps_sin_ubicacion">No se pudo obtener la ubicación. Espera unos segundos al aire libre e intenta de nuevo.</string>
+
+    <string name="poligono_importar_descarta">Al importar un archivo se descartan los puntos que todavía no guardaste.</string>
+    <string name="poligono_no_importado">No se pudo importar</string>
+    <string name="poligono_extension_invalida">El archivo «%1$s» no es .geojson, .json ni .kml. Elige un archivo con uno de esos formatos.</string>
+    <string name="poligono_archivo_ilegible">No se pudo leer el archivo o pesa más de 10 MB.</string>
+
+    <!-- Historial -->
+    <string name="poligono_historial_titulo">Historial del polígono</string>
+    <string name="poligono_historial_vacio">Este predio todavía no tiene polígono.</string>
+    <string name="poligono_historial_version_vigente">Versión %1$d (vigente)</string>
+    <string name="poligono_historial_ayuda">En verde: la versión vigente. Toca una versión anterior para verla en gris punteado encima.</string>
+    <string name="poligono_historial_comparada">En gris punteado: versión %1$d (%2$s).</string>
+    <string name="poligono_historial_autor">Autor: %1$s</string>
+    <string name="poligono_historial_superficie">Superficie: %1$s</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/poligono_historial_raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F7F6"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/poligono_historial_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/poligono_historial_titulo"
+        android:textColor="#15524A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/poligono_historial_progreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="#15524A" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/poligono_historial_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/poligono_historial_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCEEF5"
+        android:padding="10dp"
+        android:text="@string/poligono_historial_ayuda"
+        android:textColor="#163330"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/poligono_historial_estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/poligono_historial_btn_reintentar"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/poligono_reintentar"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poligono_historial_lista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp" />
+
+</LinearLayout>
