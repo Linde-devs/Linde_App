@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Expedientes (Josep). Textos iguales a la web cuando existen. -->
+    <string name="expedientes_titulo">Expedientes</string>
+    <string name="expedientes_sin_conexion">No hay conexión con el servidor. Revisa tu Internet e intenta de nuevo.</string>
+    <string name="expedientes_reintentar">Reintentar</string>
+    <string name="expedientes_entendido">Entendido</string>
+    <string name="expedientes_vacio">Todavía no tienes expedientes. Registra un predio, su polígono y envíalo a revisión para generar su expediente.</string>
+    <string name="expedientes_vacio_predio">Este predio todavía no tiene expediente.</string>
+    <string name="expedientes_generado_el">Generado el %1$s</string>
+
+    <string name="expedientes_generar">Generar expediente</string>
+    <string name="expedientes_volver_a_generar">Volver a generar</string>
+    <string name="expedientes_generar_aprobado">El predio está aprobado: puedes generar su expediente.</string>
+    <string name="expedientes_generar_con_alertas">El predio tiene alertas. Puedes corregirlas y volver a enviarlo, o generar el expediente con las alertas para mostrárselo a un técnico.</string>
+    <string name="expedientes_generar_no_permitido">Para generar el expediente, el predio debe estar «Aprobado» o «Con alertas». Primero envíalo a revisión.</string>
+    <string name="expedientes_generado">Expediente %1$s generado.</string>
+    <string name="expedientes_no_generado">No se pudo generar el expediente</string>
+    <string name="expedientes_no_abierto">No se pudo abrir el expediente</string>
+
+    <string name="expedientes_sistema">LINDE · Sistema de gestión de polígonos</string>
+    <string name="expedientes_det_titulo">Expediente %1$s</string>
+    <string name="expedientes_mensaje_con_alertas">El predio tiene alertas sin corregir. Conviene que un técnico las revise antes de iniciar el trámite.</string>
+    <string name="expedientes_mensaje_conforme">Las cuatro capas de validación quedaron conformes.</string>
+    <string name="expedientes_seccion_datos">Datos del predio</string>
+    <string name="expedientes_seccion_ubicacion">Ubicación</string>
+    <string name="expedientes_seccion_alertas">Alertas</string>
+    <string name="expedientes_seccion_validaciones">Validaciones</string>
+    <string name="expedientes_seccion_documentos">Documentos</string>
+    <string name="expedientes_seccion_inspecciones">Inspecciones de campo</string>
+    <string name="expedientes_det_datos">Productor: %1$s (CI %2$s)\nPredio: %3$s\nDepartamento: %4$s\nMunicipio: %5$s\nSuperficie declarada: %6$s\nÁrea del polígono: %7$s\nVersión del polígono: %8$d</string>
+    <string name="expedientes_linea_alerta">%1$s · %2$s: %3$s</string>
+    <string name="expedientes_linea_capa">%1$s — %2$s\n%3$s</string>
+    <string name="expedientes_linea_inspeccion">%1$s · %2$s · %3$s</string>
+    <string name="expedientes_sin_validaciones">Sin resultados de validación.</string>
+    <string name="expedientes_sin_documentos">Sin documentos.</string>
+    <string name="expedientes_leyenda">LINDE no emite certificaciones. Este expediente reúne la evidencia declarada y el resultado de las validaciones automáticas. El análisis satelital es informativo y tiene un margen de error de ±5 %% a ±20 %%. Cualquiera puede comprobar este expediente en la consulta pública de LINDE con el código %1$s.</string>
+
+    <string name="expedientes_descargar">Descargar GeoJSON</string>
+    <string name="expedientes_compartir">Compartir</string>
+    <string name="expedientes_compartir_con">Compartir GeoJSON</string>
+    <string name="expedientes_guardado">GeoJSON guardado.</string>
+    <string name="expedientes_no_descargado">No se pudo descargar el GeoJSON</string>
+    <string name="expedientes_no_escrito">No se pudo escribir el archivo en el lugar elegido.</string>
+</resources>
