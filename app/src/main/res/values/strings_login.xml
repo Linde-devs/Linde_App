@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Login y Registro (Josue). Textos iguales a la web. -->
+    <!-- Login y Registro. Textos iguales a la web. -->
     <string name="login_titulo">Iniciar sesión</string>
     <string name="login_correo">Correo electrónico</string>
     <string name="login_contrasena">Contraseña</string>

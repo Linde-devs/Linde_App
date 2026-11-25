@@ -40,7 +40,6 @@ import retrofit2.http.Streaming;
  */
 public interface LindeApi {
 
-    // === JOSUE ===========================================================================
 
     @POST("auth/login")
     Call<RespuestaLogin> login(@Body LoginDto datos);

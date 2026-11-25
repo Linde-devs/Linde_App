@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Inspecciones (Josue). Textos iguales a la web. -->
+    <!-- Inspecciones. Textos iguales a la web. -->
     <string name="inspecciones_titulo">Inspecciones de campo</string>
     <string name="inspecciones_nota">Registra lo que anotó el técnico verificador. Registrar una inspección no cambia el estado del predio.</string>
     <string name="inspecciones_vacio">Todavía no se registró ninguna inspección de campo para este predio.</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Predios (Josue). Textos iguales a la web cuando existen. -->
+    <!-- Predios. Textos iguales a la web cuando existen. -->
     <string name="predios_titulo">Mis predios</string>
     <string name="predios_nuevo">Nuevo predio</string>
     <string name="predios_vacio">Todavía no registraste predios. Toca «Nuevo predio» para empezar.</string>
