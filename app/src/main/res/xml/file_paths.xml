@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Fotos tomadas con la cámara antes de subirlas (util.Archivos.crearArchivoFoto). -->
+    <cache-path
+        name="fotos"
+        path="fotos/" />
+</paths>

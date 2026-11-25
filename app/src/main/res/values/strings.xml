@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Linde</string>
+    <string name="app_name">LINDE</string>
+    <string name="app_subtitulo">Sistema de gestión de polígonos</string>
+
+    <!-- Textos comunes de la base (los usa api.LlamadaApi y api.ErrorApi) -->
+    <string name="comun_sin_conexion">Sin conexión con el servidor. Revisa tu Internet e intenta de nuevo.</string>
+    <string name="comun_error_inesperado">Ocurrió un error inesperado.</string>
+    <string name="comun_sesion_vencida">Tu sesión venció. Vuelve a iniciar sesión.</string>
+    <string name="comun_acceso_denegado">Acceso denegado</string>
+    <string name="comun_no_encontrado">No se encontró lo que buscabas.</string>
+    <string name="comun_no_permitido">El estado actual no permite esta operación.</string>
+    <string name="comun_reintentar">Reintentar</string>
+    <string name="comun_cancelar">Cancelar</string>
+    <string name="comun_aceptar">Aceptar</string>
+    <string name="comun_eliminar">Eliminar</string>
+    <string name="comun_cargando">Cargando…</string>
+    <string name="comun_guardando">Guardando…</string>
+
+    <!-- Pantallas en construcción (stubs de Sebastian hasta que suba las suyas) -->
+    <string name="comun_en_construccion">En construcción</string>
 </resources>

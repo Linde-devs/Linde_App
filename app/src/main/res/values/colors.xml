@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores de LINDE (theme.css de la web). -->
+    <color name="linde_primario">#15524A</color>
+    <color name="linde_accion">#2E7D32</color>
+    <color name="linde_info">#2F8FB0</color>
+    <color name="linde_info_fondo">#DCEEF5</color>
+    <color name="linde_fondo">#F2F7F6</color>
+    <color name="linde_texto">#163330</color>
+    <color name="linde_error">#B3261E</color>
+    <color name="linde_error_fondo">#FBE9E7</color>
+    <color name="linde_aviso">#B26A00</color>
+    <color name="linde_aviso_fondo">#FFF3E0</color>
+    <color name="linde_gris">#6B6B6B</color>
+    <color name="linde_borde">#22163330</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

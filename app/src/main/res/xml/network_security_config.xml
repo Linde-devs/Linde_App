@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SOLO PARA DESARROLLO: la API local corre en HTTP (puerto 5080), así que se permite tráfico sin cifrar.
+    Antes de publicar la app, la API debe ir por HTTPS y esto debe quedar en cleartextTrafficPermitted="false".
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

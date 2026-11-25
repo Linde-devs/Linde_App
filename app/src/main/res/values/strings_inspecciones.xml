@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Inspecciones (Josue). Textos iguales a la web. -->
+    <string name="inspecciones_titulo">Inspecciones de campo</string>
+    <string name="inspecciones_nota">Registra lo que anotó el técnico verificador. Registrar una inspección no cambia el estado del predio.</string>
+    <string name="inspecciones_vacio">Todavía no se registró ninguna inspección de campo para este predio.</string>
+    <string name="inspecciones_registrar">Registrar inspección</string>
+    <string name="inspecciones_registrada">Inspección registrada.</string>
+    <string name="inspecciones_eliminar">Eliminar inspección</string>
+    <string name="inspecciones_eliminar_titulo">¿Eliminar la inspección?</string>
+    <string name="inspecciones_eliminar_mensaje">¿Eliminar la inspección del %1$s (%2$s)?</string>
+    <string name="inspecciones_eliminada">Inspección eliminada.</string>
+    <string name="inspecciones_item_tecnico">Técnico: %1$s</string>
+    <string name="inspecciones_item_registrada">Registrada por %1$s el %2$s</string>
+
+    <string name="inspecciones_form_fecha">Fecha de la visita</string>
+    <string name="inspecciones_form_tecnico">Técnico</string>
+    <string name="inspecciones_form_resultado">Resultado</string>
+    <string name="inspecciones_form_comentario">Comentario del técnico</string>
+    <string name="inspecciones_form_comentario_opcional">Comentario del técnico (opcional)</string>
+    <string name="inspecciones_form_guardar">Guardar inspección</string>
+</resources>

@@ -2,25 +2,82 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Se piden en tiempo de ejecución solo al abrir Polígono (Josep). -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Para que la app encuentre las apps que comparten archivos y la cámara del sistema (Android 11+). -->
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Linde">
+        android:theme="@style/Theme.Linde"
+        tools:targetApi="31">
+
+        <!-- Josue -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.login.RegistroActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.predios.PrediosActivity" />
+        <activity
+            android:name=".ui.predios.PredioFormActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.predios.PredioDetalleActivity" />
+        <activity
+            android:name=".ui.inspecciones.InspeccionesActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Josep -->
+        <activity android:name=".ui.poligono.PoligonoActivity" />
+        <activity android:name=".ui.poligono.HistorialPoligonoActivity" />
+        <activity android:name=".ui.expedientes.ExpedientesActivity" />
+
+        <!-- Sebastian -->
+        <activity
+            android:name=".ui.documentos.DocumentosActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.envio.EnvioActivity" />
+        <activity android:name=".ui.alertas.AlertasActivity" />
+        <activity
+            android:name=".ui.consulta.ConsultaActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Fotos de la cámara del sistema (Documentos, Sebastian): sin permiso de cámara. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.archivos"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

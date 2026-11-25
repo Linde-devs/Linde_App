@@ -1,7 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Linde" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <!-- La app usa siempre los colores claros de LINDE, también con el modo oscuro del celular. -->
+    <style name="Base.Theme.Linde" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/linde_primario</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/linde_info_fondo</item>
+        <item name="colorOnPrimaryContainer">@color/linde_texto</item>
+        <item name="colorSecondary">@color/linde_accion</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">@color/linde_info</item>
+        <item name="colorError">@color/linde_error</item>
+        <item name="colorErrorContainer">@color/linde_error_fondo</item>
+        <item name="android:colorBackground">@color/linde_fondo</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/linde_texto</item>
+        <item name="colorOnBackground">@color/linde_texto</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>

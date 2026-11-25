@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Predios (Josue). Textos iguales a la web cuando existen. -->
+    <string name="predios_titulo">Mis predios</string>
+    <string name="predios_nuevo">Nuevo predio</string>
+    <string name="predios_vacio">Todavía no registraste predios. Toca «Nuevo predio» para empezar.</string>
+    <string name="predios_item_detalle">%1$s · %2$s</string>
+    <string name="predios_sin_poligono">Sin polígono</string>
+    <string name="predios_punto_registrado">Punto registrado</string>
+    <string name="predios_poligono_area">Polígono: %1$s</string>
+    <string name="predios_salir">Cerrar sesión</string>
+    <string name="predios_salir_titulo">¿Cerrar sesión?</string>
+    <string name="predios_salir_mensaje">Tendrás que volver a ingresar con tu correo y contraseña.</string>
+
+    <string name="predios_eliminar">Eliminar predio</string>
+    <string name="predios_eliminar_titulo">¿Eliminar el predio?</string>
+    <string name="predios_eliminar_mensaje">¿Eliminar el predio «%1$s» junto con su polígono y sus documentos?</string>
+    <string name="predios_eliminar_con_expediente">También se borrarán sus alertas y expedientes.</string>
+    <string name="predios_eliminado">Predio eliminado.</string>
+
+    <string name="predios_form_registrar">Registrar predio</string>
+    <string name="predios_form_editar">Editar predio</string>
+    <string name="predios_form_btn_registrar">Registrar</string>
+    <string name="predios_form_guardar_cambios">Guardar cambios</string>
+    <string name="predios_form_nombre">Nombre del predio</string>
+    <string name="predios_form_departamento">Departamento</string>
+    <string name="predios_form_municipio">Municipio</string>
+    <string name="predios_form_municipio_ayuda">Escribe y elige de la lista</string>
+    <string name="predios_form_cultivo">Cultivo</string>
+    <string name="predios_form_superficie">Superficie declarada (ha)</string>
+    <string name="predios_form_desmonte">Desmonte declarado (ha)</string>
+    <string name="predios_form_desmonte_ayuda">0 si no hubo desmonte</string>
+    <string name="predios_form_seccion_titulo">Título de propiedad (INRA)</string>
+    <string name="predios_form_titulo_nota">Opcional. Si escribes el número de título, también van el CI del titular y la superficie titulada.</string>
+    <string name="predios_form_titulo">N.º de título</string>
+    <string name="predios_form_titular_ci">CI del titular</string>
+    <string name="predios_form_titulada">Superficie titulada (ha)</string>
+    <string name="predios_form_ayuda_punto">Con 4 ha o menos basta registrar un punto (latitud y longitud con 6 decimales).</string>
+    <string name="predios_form_ayuda_poligono">Con más de 4 ha deberás registrar el polígono completo del predio.</string>
+    <string name="predios_form_aviso_enviado">Este predio ya se envió a revisión (%1$s). Si cambias algún dato, vuelve a «Registrado» y tendrás que enviarlo de nuevo.</string>
+    <string name="predios_form_registrado">Predio «%1$s» registrado. Ahora registra su polígono.</string>
+    <string name="predios_form_actualizado">Predio actualizado.</string>
+
+    <string name="predios_detalle_titulo">Detalle del predio</string>
+    <string name="predios_detalle_ubicacion">Ubicación: %1$s</string>
+    <string name="predios_detalle_cultivo">Cultivo: %1$s</string>
+    <string name="predios_detalle_superficie">Superficie declarada: %1$s</string>
+    <string name="predios_detalle_desmonte">Desmonte declarado: %1$s</string>
+    <string name="predios_detalle_registrado">Registrado el %1$s</string>
+    <string name="predios_detalle_sin_titulo">Sin título registrado.</string>
+    <string name="predios_detalle_titulo_numero">N.º de título: %1$s</string>
+    <string name="predios_detalle_titular">CI del titular: %1$s</string>
+    <string name="predios_detalle_titulada">Superficie titulada: %1$s</string>
+    <string name="predios_detalle_poligono_btn">Polígono</string>
+    <string name="predios_detalle_documentos">Documentos</string>
+    <string name="predios_detalle_envio">Enviar a revisión</string>
+    <string name="predios_detalle_alertas">Alertas</string>
+    <string name="predios_detalle_inspecciones">Inspecciones</string>
+    <string name="predios_detalle_expedientes">Expedientes</string>
+    <string name="predios_detalle_editar">Editar</string>
+</resources>

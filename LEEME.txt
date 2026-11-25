@@ -1,0 +1,63 @@
+PARTE 1 - JOSUE: Base común + Login/Registro + Predios + Inspecciones
+=====================================================================
+
+Este zip trae SOLO los archivos de Josue, en las mismas rutas del proyecto Android.
+Se compiló junto con la parte de Josep que ya está en main: sin errores.
+También se instaló en el emulador: abre el Login sin errores.
+Falta probar con la API real (login, predios, inspecciones).
+
+QUÉ TRAE
+--------
+gradle/libs.versions.toml           dependencias (Retrofit, Gson, OkHttp logging, osmdroid,
+                                    play-services-location, RecyclerView, SwipeRefreshLayout)
+app/build.gradle.kts                buildConfig = true y BuildConfig.API_URL
+app/src/main/AndroidManifest.xml    permisos, red, FileProvider, las 13 Activities, Login como inicio
+app/src/main/assets/municipios.json 9 departamentos y 340 municipios (de divisionPolitica.js)
+app/src/main/res/                   colores y tema de LINDE, logo, textos, layouts, menús, xml de red
+java/.../api/        LindeApi (TODOS los endpoints), ClienteApi, ErrorApi, LlamadaApi
+java/.../modelo/     todos los modelos y enums (con los nombres que ya usa Josep)
+java/.../sesion/     Sesion (token, expira y usuario; nunca la contraseña)
+java/.../util/       Extras, Validaciones, Municipios, Formatos, Archivos, Pantalla
+java/.../ui/login/        LoginActivity, RegistroActivity
+java/.../ui/predios/      PrediosActivity, PrediosAdapter, PredioFormActivity,
+                          PredioDetalleActivity, EliminarPredio
+java/.../ui/inspecciones/ InspeccionesActivity, InspeccionesAdapter
+java/.../ui/documentos, envio, alertas, consulta   STUBS de Sebastian («En construcción»)
+
+Se BORRAN de la plantilla (ya no se usan): MainActivity.java y activity_main.xml.
+NO toca nada de Josep (ui/poligono, ui/expedientes).
+
+URL DE LA API
+-------------
+En app/build.gradle.kts, línea buildConfigField:
+  Emulador:      http://10.0.2.2:5080/api/
+  Celular real:  http://<IP-de-tu-PC>:5080/api/   (mismo Wi-Fi; ipconfig para ver la IP)
+
+PASOS PARA SUBIRLO (PowerShell, dentro de la carpeta del repo Linde_App)
+------------------------------------------------------------------------
+1) Traer lo último de GitHub:
+     git switch main
+     git pull
+
+2) Descomprimir este zip AL LADO del repo (no dentro), por ejemplo en Descargas\parte_josue.
+
+3) Copiar las carpetas "app" y "gradle" del zip dentro del repo (reemplaza los archivos):
+     robocopy $HOME\Downloads\parte_josue\app .\app /E
+     robocopy $HOME\Downloads\parte_josue\gradle .\gradle /E
+
+4) Borrar lo que ya no se usa de la plantilla:
+     git rm app/src/main/java/josue/com/bo/linde/MainActivity.java
+     git rm app/src/main/res/layout/activity_main.xml
+
+5) Revisar: NO deben salir local.properties, build/, .gradle/ ni .idea/
+     git status
+
+6) Agregar y hacer el commit (va todo junto porque las piezas dependen entre sí;
+   por separado no compilaría):
+     git add app/src gradle/libs.versions.toml app/build.gradle.kts
+     git commit -m "feat(base): base común, login, predios e inspecciones"
+
+7) Subir:
+     git push origin main
+
+8) Avisar en el grupo: «Base lista: git pull».

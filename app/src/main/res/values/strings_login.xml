@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login y Registro (Josue). Textos iguales a la web. -->
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="login_correo">Correo electrónico</string>
+    <string name="login_contrasena">Contraseña</string>
+    <string name="login_ingresar">Ingresar</string>
+    <string name="login_ingresando">Ingresando…</string>
+    <string name="login_faltan_datos">Ingresa tu correo y tu contraseña.</string>
+    <string name="login_es_administrador">Esta app es para productores. Usa la web.</string>
+    <string name="login_sin_cuenta">¿Eres productor y no tienes cuenta?</string>
+    <string name="login_registrate">Regístrate</string>
+    <string name="login_te_mostraron">¿Te mostraron un expediente?</string>
+    <string name="login_consultar">Consúltalo por su código</string>
+
+    <string name="login_registro_titulo">Registro de productor</string>
+    <string name="login_registro_sub">Crea tu cuenta para registrar tus predios y sus polígonos</string>
+    <string name="login_registro_nombre">Nombres</string>
+    <string name="login_registro_apellido">Apellidos</string>
+    <string name="login_registro_ci">CI o NIT</string>
+    <string name="login_registro_runpa">Código RUNPA (opcional)</string>
+    <string name="login_registro_runpa_ayuda">Si lo tienes</string>
+    <string name="login_registro_telefono">Teléfono</string>
+    <string name="login_registro_departamento">Departamento</string>
+    <string name="login_registro_municipio">Municipio</string>
+    <string name="login_registro_minimo">Mínimo 8 caracteres</string>
+    <string name="login_registro_confirmar">Confirmar contraseña</string>
+    <string name="login_registro_crear">Crear cuenta</string>
+    <string name="login_registro_creando">Creando cuenta…</string>
+    <string name="login_registro_ya_tengo">¿Ya tienes cuenta? Iniciar sesión</string>
+    <string name="login_registro_listo_titulo">Cuenta creada</string>
+    <string name="login_registro_listo">Tu código de productor es %1$s. Ahora vamos a iniciar tu sesión.</string>
+    <string name="login_registro_continuar">Continuar</string>
+</resources>
