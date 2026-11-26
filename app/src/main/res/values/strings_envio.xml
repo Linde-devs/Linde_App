@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="envio_titulo">Enviar a revisión</string>
+    <string name="envio_requisitos_titulo">Requisitos del predio</string>
+    <string name="envio_historial_titulo">Envíos anteriores</string>
+    <string name="envio_ver_alertas">Ver alertas</string>
+</resources>

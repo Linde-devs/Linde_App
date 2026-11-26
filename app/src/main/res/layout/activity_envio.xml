@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- STUB de la base: Sebastian reemplaza este layout. -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/envio_raiz"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/linde_fondo">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/envio_barra"
+        style="@style/Linde.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/envio_progreso"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/comun_en_construccion"
-        android:textColor="@color/linde_primario"
-        android:textSize="18sp" />
-</FrameLayout>
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="16dp">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/envio_requisitos_titulo"
+                android:textSize="20sp" android:textStyle="bold"
+                android:textColor="@color/linde_primario" />
+            <LinearLayout android:id="@+id/envio_requisitos"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <TextView android:id="@+id/envio_estado"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="12dp" android:textColor="@color/linde_texto"
+                android:visibility="gone" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/envio_reintentar"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/comun_reintentar" android:visibility="gone" />
+            <TextView android:id="@+id/envio_resumen"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="@color/linde_primario"
+                android:textSize="18sp" android:paddingTop="16dp" />
+            <LinearLayout android:id="@+id/envio_resultado"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/envio_alertas"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/envio_ver_alertas" android:visibility="gone" />
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp" android:text="@string/envio_historial_titulo"
+                android:textColor="@color/linde_primario" android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout android:id="@+id/envio_historial"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/envio_enviar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="12dp" android:text="@string/envio_titulo" />
+</LinearLayout>
