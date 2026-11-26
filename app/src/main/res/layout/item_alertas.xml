@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="14dp">
+        <TextView android:id="@+id/alertas_item_prioridad"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:id="@+id/alertas_item_capa"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="6dp" android:textColor="@color/linde_primario" />
+        <TextView android:id="@+id/alertas_item_mensaje"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="8dp" android:textColor="@color/linde_texto" />
+        <TextView android:id="@+id/alertas_item_fecha"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="8dp" android:textColor="@color/linde_gris" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

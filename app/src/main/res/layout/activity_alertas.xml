@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- STUB de la base: Sebastian reemplaza este layout. -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/alertas_raiz"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/comun_en_construccion"
-        android:textColor="@color/linde_primario"
-        android:textSize="18sp" />
-</FrameLayout>
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/linde_fondo">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/alertas_barra" style="@style/Linde.Toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/alertas_progreso"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:indeterminate="true" android:visibility="gone" />
+    <TextView android:id="@+id/alertas_estado"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:padding="24dp"
+        android:textColor="@color/linde_texto" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/alertas_reintentar"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:text="@string/comun_reintentar"
+        android:visibility="gone" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/alertas_refrescar"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/alertas_lista"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="12dp" android:orientation="vertical" />
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp" android:background="@color/linde_info_fondo"
+        android:text="@string/alertas_nota" android:textColor="@color/linde_texto" />
+</LinearLayout>

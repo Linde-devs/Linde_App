@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alertas_titulo">Alertas</string>
+    <string name="alertas_vacio">Este predio no tiene alertas pendientes.</string>
+    <string name="alertas_nota">Una alerta se cierra corrigiendo el dato y reenviando el predio.</string>
+</resources>
