@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+        <TextView android:id="@+id/documentos_item_tipo"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/linde_primario" android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView android:id="@+id/documentos_item_detalle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="8dp" android:textColor="@color/linde_texto" />
+        <TextView android:id="@+id/documentos_item_archivo"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="8dp" android:textColor="@color/linde_texto" />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/documentos_item_subir"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/documentos_subir" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/documentos_item_eliminar"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/documentos_eliminar" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

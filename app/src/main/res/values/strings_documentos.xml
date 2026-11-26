@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="documentos_titulo">Documentos</string>
+    <string name="documentos_nota">Una foto del título puede generar una alerta de prioridad Baja para revisión manual.</string>
+    <string name="documentos_vacio">Este predio aún no tiene documentos.</string>
+    <string name="documentos_agregar">Agregar documento</string>
+    <string name="documentos_subir">Subir archivo</string>
+    <string name="documentos_eliminar">Eliminar</string>
+</resources>
